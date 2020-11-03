@@ -1,5 +1,11 @@
+import java.util.*;
+
 public class TicTacToeGame
 {
+
+	static char[] board;
+	String user_input;
+	Scanner me=new Scanner();
 
 	TicTacToeGame()
 	{
@@ -8,8 +14,6 @@ public class TicTacToeGame
 		System.out.println("=========================");
 	}
 
-
-	static char[] board;
 
 	public void empty_array()
 	{
@@ -21,13 +25,16 @@ public class TicTacToeGame
 
 	}
 
-	public void get_info()
+
+	public void get_input()
 	{
+		System.out.println("Please Enter 'X' or 'O'");
+		user_input=me.nextline();
 
 	}
-	public static void main(String args[])
+
+	public static void main(String[] args)
 	{
-		TicTacToeGame obj= new TicTacToeGame();
-		obj.empty_array();
+		TicTacToeGame obj= new 
 	}
 }
